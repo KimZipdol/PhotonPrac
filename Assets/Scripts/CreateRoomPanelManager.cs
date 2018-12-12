@@ -17,8 +17,7 @@ public class CreateRoomPanelManager : MonoBehaviour
     {
         errorText.text = "";
         okButton.interactable = false;
-        roomNameInputField.onValueChanged.
-            AddListener(delegate { CheckRoomName(); });
+        roomNameInputField.onValueChanged.AddListener(delegate { CheckRoomName(); });
 	}
 
     void CheckRoomName() {

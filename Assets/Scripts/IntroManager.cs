@@ -60,8 +60,7 @@ public class IntroManager : PunBehaviour
         {
             GameObject createRoomPanelGameObject = Instantiate(createRoomPanelPrefab);
             createRoomPanelGameObject.transform.SetParent(canvas.transform, false);
-            createRoomPanelManager =
-                createRoomPanelGameObject.GetComponent<CreateRoomPanelManager>();
+            createRoomPanelManager = createRoomPanelGameObject.GetComponent<CreateRoomPanelManager>();
             createRoomPanelManager.createRoomDelegate = CreateRoom;
         }
     }
@@ -134,8 +133,7 @@ public class IntroManager : PunBehaviour
                     PhotonNetwork.JoinRoom(gameRoomInfo.roomName);
                 });
 
-            scrollContent.GetComponent<RectTransform>().sizeDelta += 
-                new Vector2(0, 70);
+            scrollContent.GetComponent<RectTransform>().sizeDelta += new Vector2(0, 70);
         }
     }
 }
